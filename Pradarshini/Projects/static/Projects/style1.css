@@ -7,6 +7,7 @@
 
 body {
 	background: hsl(0, 0%, 90%);
+	padding: 1.8em;
 }
 
 /*--------------------------------------------------------------
@@ -179,6 +180,6 @@ img {
 
 .card {
 	flex: 0 1 24%;
-	border-radius: 20%;
+	border-radius: 5%;
 }
 

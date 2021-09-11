@@ -1,4 +1,5 @@
 {% load static%}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 
 <html>
@@ -22,6 +23,10 @@
             </div>
         </div>
     </header>
+    <div class="form">
+    {% csrf_token %}
+    {% crispy form %}
+    </div>
     <main class="main-area">
         <div class="centered">
             <section class="cards">
