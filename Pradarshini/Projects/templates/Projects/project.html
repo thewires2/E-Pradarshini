@@ -1,0 +1,49 @@
+{% load static%}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% comment %} <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'Projects/style1.css' %}">
+        <script src="https://kit.fontawesome.com/c8ee3dd930.js"></script>
+    </head>
+    <body>
+    <header class="masthead clear">
+        <div class="centered">
+            
+            <div class="site-branding">
+                <h1 class="site-title">Flexbox Demo: Card Layouts</h1>
+              <p>Text from <a title="Office Ipsum" href="http://officeipsum.com/index.php">Office Ipsum</a> </p>
+            </div>
+        </div>
+    </header>
+    <main class="main-area">
+        <div class="centered">
+            <section class="cards">
+        {% for response in Data%}
+        <div class="card">
+                    <a href="{% url 'project_details' response.id %}">
+                        <picture class="thumbnail">
+                            {% comment %} <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg" alt="A banana that looks like a bird"> {% endcomment %}
+                        </picture>
+                        <div class="card-content">
+                            <h2>{{ response.project_Title }}</h2>
+                            <strong><p>{{response.project_Domain }}</p></strong>
+                            <strong><p>{{response.project_Class}} {{response.project_Year}}</p></strong>
+                            <strong><p>Mentor: {{response.project_Mentor }}</p></strong>
+                        </div><!-- .card-content -->
+                    </a>
+                </div>
+        {% endfor %}
+            </section>
+        </div>
+    </main>
+    </body>
+</html>
+
+
