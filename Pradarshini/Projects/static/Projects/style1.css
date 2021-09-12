@@ -71,6 +71,7 @@ pre {
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
+	margin-top: 1.6em;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -181,5 +182,7 @@ img {
 .card {
 	flex: 0 1 24%;
 	border-radius: 5%;
+	text-shadow: 1px 1px 0.5px;
+	box-shadow: 10px 10px 5px grey;
 }
 

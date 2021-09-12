@@ -2,24 +2,25 @@ from django import forms
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 
-# class ProjectForm(forms.Form):
-#     project_Year = forms.IntegerField(label='Year')
-#     project_Class = forms.CharField(max_length=2,label='BE')
-#     project_Mentor = forms.CharField(max_length=100)
+
 
 class ProjectForm(forms.Form):
+    CLASS_CHOICES = [
+    ('BE', 'BE'),
+    ('TE', 'TE'),
+    ('SE', 'SE'),
+    ]
 
     project_Year = forms.IntegerField(
         label = "Select the Year",
         min_value =2015,
-        max_value =2025,
+        max_value =2030,
         required = True,
     )
 
     project_Class = forms.CharField(
         label = "Select the Class",
-        # choices = (('BE', 'BE'),('TE', 'TE'),('SE', 'SE')),
-        max_length = 2,
+        widget=forms.Select(choices=CLASS_CHOICES),
         required = True,
     )
 
