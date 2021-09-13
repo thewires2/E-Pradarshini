@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="">
-	</head>
-	<body>
+{% extends "base.html" %}
+{% block title %}{{ Data.project_Title }}{% endblock %}
+	{% block body%}
 		{{ Data.project_Year }}
 		{{ Data.project_Class }}
 		{{ Data.project_Title }}
@@ -17,5 +9,4 @@
 		<a href="{{ Data.project_Publication }}">Publication</a>
 		{{ Data.project_Abstract }}
 		<a href="{{ Data.project_Video }}">Video</a>
-	</body>
-</html>
+	{% endblock %}
