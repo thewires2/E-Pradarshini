@@ -10,11 +10,12 @@ class ProjectForm(forms.Form):
     ('TE', 'TE'),
     ('SE', 'SE'),
     ]
-
+    YEAR_CHOICES=[(r,r) for r in range(2015,2026)]
     project_Year = forms.IntegerField(
         label = "Select the Year",
-        min_value =2015,
-        max_value =2030,
+        # min_value =2015,
+        # max_value =2030,
+        widget=forms.Select(choices=CLASS_CHOICES),
         required = True,
     )
 
