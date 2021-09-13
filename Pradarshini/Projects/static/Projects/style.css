@@ -311,5 +311,25 @@ big {
 }
 
 .form {
-	padding: 1.6em;
+	padding: 1em;
+}
+
+.heading {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0.1em;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 0.1em;
+}
+
+.main-body {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.5em;
+	margin-top: 0.1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 0.5em;
 }
