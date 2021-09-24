@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ng#y0dv)y#90jn^l4p=0_=8^q9lwf(of&5j%6wzg8536ow=hd6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','127.0.0.1']
 
 
 # Application definition
@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Projects',
-    'crispy_forms'
+    'crispy_forms',
+    'Website',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
