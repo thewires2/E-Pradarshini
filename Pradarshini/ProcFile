@@ -1,0 +1,1 @@
+web: gunicorn Pradarshini.wsgi --log-file -
