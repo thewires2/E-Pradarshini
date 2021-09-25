@@ -6,9 +6,9 @@
 
 3. Create a virtual enviornment, e.g
 
-    `pip install virtaulenv`\
-    `virtualenv venv`\
-    `source venv/bin/activate`
+    `pip install virtaulenv\
+    virtualenv venv\
+    source venv/bin/activate`
     
     > This is for linux based systems
 
