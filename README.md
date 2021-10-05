@@ -14,7 +14,7 @@ Backend for the E-Pradarshini portal to showcase projects
 
 ---
 
-Steps to run
+## Steps to run
 
 1. Download zip 
 
