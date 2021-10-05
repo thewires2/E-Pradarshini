@@ -1,72 +1,107 @@
-{% extends "base.html" %}
 {% load static %}
-{% block body%}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>e-Pradarshini</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'Projects/img/tab-icon.png'%}" rel="icon">
+  <link href="{% static 'Projects/img/tab-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'Projects/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'Projects/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'Projects/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'Projects/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'Projects/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'Projects/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'Projects/css/style.css'%}" rel="stylesheet">
 
 
-<main id="main-doc">
+</head>
 
-  <section class="main-section" id="Title">
-    <header class="heading">Title</header>
-    <div class="main-body">
-	  {{ Data.project_Title }}
-	  </div>
-  </section>
+<body id="page-top">
 
-  <section class="main-section" id="Abstract">
-    <header class="heading">Abstract</header>
-    <div class="main-body">
-    {{ Data.project_Abstract }}
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <div style="display-flex:justify-content-center"><img  src="img/tab-icon.png" height="50px"
+            width="50px" ></img>
+      <a class="navbar-brand js-scroll" href="#page-top">VESIT</a></div>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll" href="#">Projects</a>
+            <div class="dropdown-content">
+              <a class="js-scroll" href="#blog1">B.E. (20-21)</a>
+              <a class="js-scroll" href="#abc1">T.E. (20-21)</a>
+              <a class="js-scroll" href="#abc2">S.E. (20-21)</a>
+              <a class="js-scroll" href="#blog">B.E. (19-20)</a>
+              <a class="js-scroll" href="#abc">T.E. (19-20)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Schedule</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll" href="#xyz">Archives</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="https://drive.google.com/file/d/1Oc3daItKzb545tfO9CCmt_9-p57adM18/view?usp=sharing">Prakalp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Gallery</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-  </section>
+  </nav>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
 
-  <section class="main-section" id="Domain">
-    <header class="heading">Domain</header>
-    <div class="main-body">
-    {{ Data.project_Domain }}
-    </div>
-  </section>
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'Projects/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/popper/popper.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/counterup/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/counterup/jquery.counterup.js' %}"></script>
+  <script src="{% static 'Projects/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'Projects/lib/typed/typed.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'Projects/contactform/contactform.js' %}"></script>
 
-  <section class="main-section" id="Class">
-    <header class="heading">Class</header>
-    <div class="main-body">
-    {{ Data.project_Class }} {{ Data.project_Year }}
-    </div>
-  </section>
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'Projects/js/main.js' %}"></script>
 
-  <section class="main-section" id="Mentor">
-    <header class="heading">Mentor</header>
-    <div class="main-body">
-    {{ Data.project_Mentor }}
-    </div>
-  </section>
-    
-  <section class="main-section" id="Members">
-    <header class="heading">Members</header>
-    <div class="main-body">
-    {{ Data.project_Members }}
-    </div>
-  </section>
+</body>
 
-  <section class="main-section" id="Publication">
-    <header class="heading">Publication</header>
-    <div class="main-body">
-    <a href="{{ Data.project_Publication }}">Publication</a>
-    </div>
-  </section>
-
-  <section class="main-section" id="Video">
-    <header class="heading">Video</header>
-    <div class="main-body">
-    <a href="{{ Data.project_Video }}">Video</a>
-    </div>
-  </section>
-</main>
-{% endblock %}
-
-		
-		
-		
-		
-		
-		
-		
+</html>
+  </body>
+  </html>

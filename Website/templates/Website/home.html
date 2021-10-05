@@ -1,12 +1,1025 @@
+{% load static %}
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>e-Pradarshini</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="{% static 'Website/img/tab-icon.png'%}" rel="icon">
+    <link href="{% static 'Website/img/tab-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static 'Website/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{% static 'Website/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Website/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Website/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Website/lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Website/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'Website/css/style.css'%}" rel="stylesheet">
+
+
 </head>
-<body>
-    Hello World
+
+<body id="page-top">
+
+    <!--/ Nav Star /-->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <div style="display-flex:justify-content-center"><img src="{% static 'Website/img/tab-icon.png'%}" height="50px"
+                    width="50px"></img>
+                <a class="navbar-brand js-scroll" href="#page-top">VESIT</a>
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link js-scroll" href="{% url 'project_main' %}">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#service">Schedule</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link js-scroll" href="#xyz">Archives</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll"
+                            href="https://drive.google.com/file/d/1Oc3daItKzb545tfO9CCmt_9-p57adM18/view?usp=sharing">Prakalp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#work">Gallery</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/ Nav End /-->
+
+    <!--/ Intro Skew Star /-->
+    <div id="home" class="intro route bg-image" style="background-image: url({% static 'Website/img/intro-bg.jpg'%})">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 style=" color:#FFF">Department of Computer Engineering</h1><br>
+
+                    <h3 style=" color:#FFF">In association with </h3> <img
+                        src="{% static 'Website/img/VESIT-IIC-LOGO.png' %}" height="100px" width="90px"></img><br>
+                    <h2 class="intro-title mb-4">e-PRADARSHINI </h2>
+                    <p class="intro-subtitle"><span class="text-slider-items">Keynote,Research Support,Github
+                            Training,Domain
+                            Selection,Mentor Identification</span><strong class="text-slider"></strong></p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Intro Skew End /-->
+
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                            <img src="testimonial-2.JPG'%}" class="img-fluid rounded b-shadow-a" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-me pt-4 pt-md-0">
+                            <div class="title-box-2">
+                                <h5 class="title-left">
+                                    About us
+                                </h5>
+                            </div>
+                            <p class="lead">
+                                e-Pradarshanini is an online platform used to exhibit the projects performed by the
+                                Computer Engineering department.
+
+
+                            </p>
+                            <p class="lead">
+                                Prakalp is the summarization of the projects in a nutshell and forms the core of the
+                                efforts put in by the faculty and students as a team towards innovation and research .
+                            </p>
+
+                            <p class="lead">
+                                The major areas in which Computer department specializes include<br>
+                                1. AI, Machine Learning and deep learning <br>
+                                2. Data warehousing and Big data analytics <br>
+                                3. IOT and Robotics<br>
+                                4. Image Processing and Multimedia<br>
+                                5. Networking and Security (Block Chain)<br>
+                                6. High Performance Computing<br>
+                                7. Cloud Computing <br>
+
+                            </p>
+                            <p class="lead">
+                                In the year 2020, the department is proud of its 114 projects that have led to more than
+                                90 research publications in International Journals and Conferences of repute and around
+                                36 awards in various competitions. All of this is highlighted through our yearly booklet
+                                Prakalp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!--/ Section Services Star /-->
+    <section id="service" class="services-mf route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Schedule
+                        </h3>
+                        <p class="subtitle-a">
+                            These webinars will be conducted between 1st-30th June, 2020 for Prakalp Pradarshini.
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">
+                Day 1
+            </h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-code-working"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title"> Inauguration by Principal </h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 1 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-3:40 PM
+                            </p>
+                            <p class="s-description text-center">
+
+                                <strong>Speaker</strong>: (Principal) DR.J. M. NAIR
+                            </p>
+                            <br>
+                            <p class="s-description text-center"><a
+                                    href="https://drive.google.com/file/d/1fg2CEX03t8U0s9jr1gD-t98JKFdCQhJs/view?usp=sharing">Day
+                                    1-Video</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Key Note Address</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 1 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-4:00 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Speaker</strong>: Dr. Nupur Giri, HOD, Computer Department
+                            </p>
+                            <p class="s-description text-center">
+                                <a
+                                    href="https://drive.google.com/file/d/1X1QrAcCb7siO8ZZ6whNTez5zdyO4VvY2/view?usp=sharing">Presentation</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-code-working"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Rules and Regulations</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 1 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 4:00-4:30 PM
+                            </p>
+                            <p class="s-description text-center">
+
+                                <strong>Speaker</strong>: Dr. Gresha Bhatia, Deputy HOD,Project Convenor
+                            </p>
+                            <p class="s-description text-center">
+                                <a
+                                    href="https://drive.google.com/file/d/1sTM1d_Fb_zcnUsAJk7BQ3NIPChlGVhqt/view?usp=sharing">Presentation</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-camera"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Research Guidance</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 1 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 4:30-5:15 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Speaker</strong>: Mrs. Sharmila Sengupta, Research Incharge
+                            </p>
+                            <p class="s-description text-center"><a
+                                    href="https://drive.google.com/file/d/1mF_trlNi4nnk-WnAlV4OY6PQmpt2bYzZ/view?usp=sharing">Presentation</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">Day 2</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Github Training</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 2 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Speaker</strong>: Technical Team
+                            </p>
+                            <p class="s-description text-center"><a
+                                    href="https://drive.google.com/file/d/1NWViryHSPYBD1fkU6Tnw1VnvEQa_9oSy/view?usp=sharing">Day
+                                    2-Video</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">Day 3</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Area of Specialization</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 3 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Speaker</strong>: Panel of domian Experts
+                            </p>
+                            <p class="s-description text-center"><a
+                                    href="https://drive.google.com/file/d/1C6sPR9cxzGjuwKa5ixKHuWhp9mk40Gfr/view?usp=sharing">Presentation</a>
+                            </p>
+                            <p class="s-description text-center"><a
+                                    href="https://drive.google.com/file/d/1WxudOwBDLfA1grdCY__3yTr1oE5MdUUG/view?usp=sharing">Day
+                                    3-Video</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">Day 4</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Domain Selection & Mentor Identification</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 4th-7th June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Form</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">Day 5</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Mentor Allocation</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 8 June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Form</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a">Day 6</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Project Finalization</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 9th-14th June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Mentor</strong>: Pooja Nagdev & Priya R.L
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle-a"> 15th -30th June</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Synopsis Submission</h2>
+                            <p class="s-description text-center">
+                                <strong>Date</strong>: 30th June, 2020
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Time</strong>: 3:30-5:30 PM
+                            </p>
+                            <p class="s-description text-center">
+                                <strong>Mentor</strong>: Pooja Nagdev & Priya R.L
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ Section Services End /-->
+
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">115</p>
+                            <span class="counter-text">B.E. PROJECTS COMPLETED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">1984</p>
+                            <span class="counter-text">YEAR OF ESTABLISHMENT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">180</p>
+                            <span class="counter-text">STUDENTS EVERY YEAR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                            <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="counter">36</p>
+                            <span class="counter-text">AWARDS WON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="xyz" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-me pt-4 pt-md-0">
+                            <div class="title-box-2">
+                                <h5 class="title-left">
+                                    Archives
+                                </h5>
+                            </div>
+                            <p class="lead">
+                                <a
+                                    href="https://docs.google.com/spreadsheets/d/1F2u1fNa4QSwU77rAuRFip0Ynr44OugNuBk7XdrbQA2o/edit?usp=sharing">
+                                    1. Archival copy of last 6 years B.E. Project black books</a>
+                            </p>
+                            <p class="lead"><a
+                                    href="https://docs.google.com/spreadsheets/d/17QNhI1EXYpOC7bIGlIUjO0yQhlLmql84yUJCTALO_q8/edit?usp=sharing">
+                                    2. T.E. Project report folders of year 2019-2020</a>
+                            </p>
+                            <p class="lead"><a
+                                    href="https://drive.google.com/open?id=1rEobGERcSvrLCNapiCULtlimC65N_hKO">3. Project
+                                    group 2018-2019 folders group wise</a>
+                            </p>
+                            <p class="lead"><a
+                                    href="https://drive.google.com/open?id=1v3CbwyjAwxk7_LU-1RYQyaHxCQMtdGfR">4. Project
+                                    group 2019-2020 folders group wise</a>
+                            </p>
+                            <p class="lead"><a
+                                    href="https://docs.google.com/spreadsheets/d/1533tGMKJBpKIeQtPtPXaqQvqRv79oNOKWAdHLIWapz8/edit#gid=773104839">5.
+                                    Paper publication from 2013 onwards</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--/ Section Portfolio Star /-->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Gallery
+                        </h3>
+                        <p class="subtitle-a">
+                            The department has been bringing forth generation of trained and professional individuals in
+                            the field of
+                            Computer Science.
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g1.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g1.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Convocation</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g2.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g2.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Convocation</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g3.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g3.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Convocation</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g4.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g4.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Convocation</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g5.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g5.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2018-19</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g6.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g6.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2018-19</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g7.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g7.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2018-19</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g8.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g8.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2018-19</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g9.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g9.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g10.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g10.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g12.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g12.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g13.JPG'%}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g13.JPG'%}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">WeTECH Ideathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g15.jpeg' %}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g15.jpeg' %}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g16.jpeg' %}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g16.jpeg' %}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g17.jpeg' %}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g17.jpeg' %}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="{% static 'Website/img/g18.jpeg' %}" data-lightbox="gallery-mf">
+                            <div class="work-img">
+                                <img src="{% static 'Website/img/g18.jpeg' %}" alt="" class="img-fluid crop">
+                            </div>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Syrus Hackathon</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">2019-20</span> / <span class="w-date">VESIT</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <span class="ion-ios-plus-outline"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Section Portfolio End /-->
+
+    <!--/ Section Testimonials Star /-->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-mf" class="owl-carousel owl-theme">
+                        <div class="testimonial-box">
+                            <div class="author-test">
+                                <img src="{% static 'Website/img/Principal-photo.JPG'%}" alt="" class="rounded-circle b-shadow-a">
+                                <span class="author">Dr. J.M. Nair, Principal</span>
+                            </div>
+                            <div class="content-test">
+                                <p class="description lead">
+                                    The year of new A-B-C-D Artificial Intelligence – Block Chain Technology, Cloud
+                                    Computing and Data
+                                    Science, was a year of recognition for our institute.
+                                </p>
+                                <span class="comit"><i class="fa fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="author-test">
+                                <img src="{% static 'Website/img/testimonial-4.JPG'%}" alt="" class="rounded-circle b-shadow-a">
+                                <span class="author">Dr.Nupur Giri, HOD CMPN DEPT.</span>
+                            </div>
+                            <div class="content-test">
+                                <p class="description lead">
+                                    The department presents them with plethora of opportunities for applying their
+                                    acquired knowledge and
+                                    critical thinking skills thus striving to bridge the theory – practice divide.
+                                </p>
+                                <span class="comit"><i class="fa fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--/ Section Contact-Footer Star /-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+        style="background-image: url(img/overlay-bg.jpg)">
+        <div class="overlay-mf">
+
+        </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="credits">
+                            Photographs by the VESIT Photocircle
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--/ Section Contact-footer End /-->
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="{% static 'Website/lib/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'Website/lib/jquery/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'Website/lib/popper/popper.min.js' %}"></script>
+    <script src="{% static 'Website/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Website/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'Website/lib/counterup/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'Website/lib/counterup/jquery.counterup.js' %}"></script>
+    <script src="{% static 'Website/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'Website/lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'Website/lib/typed/typed.min.js' %}"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="{% static 'Website/contactform/contactform.js' %}"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{% static 'Website/js/main.js' %}"></script>
+
 </body>
+
 </html>
