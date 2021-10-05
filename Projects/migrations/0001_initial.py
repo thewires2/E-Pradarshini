@@ -7,23 +7,61 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='ProjectModel',
+            name="ProjectModel",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('project_Year', models.IntegerField(choices=[(2015, 2015), (2016, 2016), (2017, 2017), (2018, 2018), (2019, 2019), (2020, 2020), (2021, 2021), (2022, 2022), (2023, 2023), (2024, 2024), (2025, 2025)], default=2021)),
-                ('project_Class', models.CharField(choices=[('BE', 'BE'), ('TE', 'TE'), ('SE', 'SE')], default='BE', max_length=2)),
-                ('project_Members', models.CharField(max_length=500)),
-                ('project_Title', models.CharField(max_length=500)),
-                ('project_Mentor', models.CharField(max_length=100)),
-                ('project_Abstract', models.CharField(max_length=2000)),
-                ('project_Publication', models.CharField(max_length=300)),
-                ('project_Domain', models.CharField(default='Big Data Analytics and Machine Learning', max_length=300)),
-                ('project_Video', models.CharField(default='', max_length=400)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "project_Year",
+                    models.IntegerField(
+                        choices=[
+                            (2015, 2015),
+                            (2016, 2016),
+                            (2017, 2017),
+                            (2018, 2018),
+                            (2019, 2019),
+                            (2020, 2020),
+                            (2021, 2021),
+                            (2022, 2022),
+                            (2023, 2023),
+                            (2024, 2024),
+                            (2025, 2025),
+                        ],
+                        default=2021,
+                    ),
+                ),
+                (
+                    "project_Class",
+                    models.CharField(
+                        choices=[("BE", "BE"), ("TE", "TE"), ("SE", "SE")],
+                        default="BE",
+                        max_length=2,
+                    ),
+                ),
+                ("project_Members", models.CharField(max_length=500)),
+                ("project_Title", models.CharField(max_length=500)),
+                ("project_Mentor", models.CharField(max_length=100)),
+                ("project_Abstract", models.CharField(max_length=2000)),
+                ("project_Publication", models.CharField(max_length=300)),
+                (
+                    "project_Domain",
+                    models.CharField(
+                        default="Big Data Analytics and Machine Learning",
+                        max_length=300,
+                    ),
+                ),
+                ("project_Video", models.CharField(default="", max_length=400)),
             ],
         ),
     ]
