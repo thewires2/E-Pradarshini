@@ -41,7 +41,7 @@ Backend for the E-Pradarshini portal to showcase projects
 3. Run the migrations
 
 ```
-  python manage.py migrate
+python manage.py migrate
 ```
 
 4. Run the local development server on localhost
